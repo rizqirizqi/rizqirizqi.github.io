@@ -1,0 +1,213 @@
+/* styles.css */
+
+body {
+	background-color: #31474C;
+	color: #2AB284;
+	font-family: 'Arial', sans-serif;
+}
+
+button {
+	background: #2AB284;
+	border: 2px solid #2AB284;
+	color: #FFF;
+	cursor: pointer;
+	margin: 2px 0px 0px 0px;
+	padding: 3px 10px;
+	text-transform: uppercase;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+
+button:hover{
+	background: #56FFC5;
+	border: 2px solid #56FFC5;
+}
+
+button:focus {
+	outline:0;
+}
+
+button:active {
+	background: #0E6648;
+	border: 2px solid #0E6648;
+	position: relative;
+	top: 1px;
+}
+
+table, td {
+	background-color: #1FBCE5;
+	border-spacing: 0px;
+	border: 2px solid #31474C;
+	color: #FFF;
+	font-size: 1em;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	white-space: nowrap;
+}
+
+tr {
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+	padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FEC42F;
+}
+
+a:hover {
+    color: #FEE82F;
+}
+
+#scrollable-table {
+	top: 150px;
+    height: 146px;
+    overflow-y: auto;
+}
+
+#scrollable-table table {
+    border: 0px;
+}
+
+#scrollable-table td {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 0px;
+    border-bottom: 2px solid #31474C;
+}
+
+#title, #wrapper {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+	width: 80%;
+}
+
+#keyword {
+	clear: both;
+	color: #FFF;
+	font-size: 1.5em;
+	margin: 15px 0px 0px 0px;
+}
+
+.keyChar {
+	background-color: #1FBCE5;
+	display: inline-block;
+	height: 48px;
+	margin: 0px 2px 0px 2px;
+	width: 48px;
+}
+
+.keyChar span {
+	position: relative;
+    top: 10px; 
+}
+
+#keyboard {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+}
+
+#hangman {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+#score-now {
+    background: #1FBCE5;
+	color: #FFF;
+	padding: 3px 10px;
+	position: absolute;
+	width: 30%;
+}
+
+#score-now span {
+	font-size: 3em;
+}
+
+#win-lose, #score-log {
+	/* margin: 20px auto 0px auto; */
+	left: 70%;
+	position: absolute;
+	width: 30%;
+}
+
+#score-log {
+    top: 150px;
+}
+
+#play-again {
+	margin-top: 20px;
+}
+
+#alert {
+    background: #1FBCE5;
+    color: #FFF;
+    left: 5%;
+    opacity: 0;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 150px;
+    width: 20%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #31474C;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#loader img {
+    position: absolute;
+    top: 56%;
+    left: 39%;
+    margin: -15% 0 0 0;
+}
+
+#loader span {
+    position: absolute;
+    top: 70%;
+    left: 47%;
+}
+
+/* Responsive */
+@media (min-width:0px) and (max-width:720px) {
+    @viewport {
+        width: 720;
+        zoom: 1;
+        max-zoom: 3;
+        orientation: landscape;
+    }
+}
