@@ -203,11 +203,81 @@ a:hover {
 }
 
 /* Responsive */
-@media (min-width:0px) and (max-width:720px) {
-    @viewport {
-        width: 720;
-        zoom: 1;
-        max-zoom: 3;
-        orientation: landscape;
+@media handheld, screen and (min-width:0px) and (max-width:720px) {
+    #wrapper {
+        width: 98%;
+    }
+    
+    footer {
+        top: 1040px;
+        left: 2px;
+    }
+    
+    #keyword {
+        font-size: 1.3em;
+    }
+
+    .keyChar {
+        height: 22px;
+        width: 22px;
+        margin: 0px 1px 0px 1px;
+    }
+
+    .keyChar span {
+        top: 0px; 
+    }
+
+    #keyboard {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    button {
+        margin: 1px 0px 0px 0px;
+        padding: 1px 6px;
+    }
+
+    #hangman {
+        width: 100%;
+    }
+
+    #win-lose, #score-log {
+        /* margin: 20px auto 0px auto; */
+        left: 10%;
+        position: absolute;
+        width: 80%;
+    }
+    
+    #score-now {
+        padding: 0px 0px;
+        left: 10%;
+        width: 80%;
+        top: 590px;
+    }
+
+    #score-log {
+        top: 830px;
+    }
+    
+    #win-lose {
+        top: 730px;
+    }
+
+    #play-again {
+        margin-top: 20px;
+    }
+
+    #alert {
+        left: 0%;
+        opacity: 0;
+        padding: 0px 0px 0px 0px;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+    }
+    
+    #loader {
+        width: 0%;
+        height: 0%;
     }
 }
